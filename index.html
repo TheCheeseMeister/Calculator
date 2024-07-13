@@ -5,9 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="javascript.js"></script>
+    <script src="javascript.js" defer></script>
 </head>
 <body>
-    
+    <header class="header">A Very Cool Calculator</header>
+    <main class="main">
+        <div class="display">
+            <div class="small-text" id="small-text"></div>
+            <div class="large-text" id="large-text">0</div>
+        </div>
+
+        <div class="buttons">
+            <div class="numbers" id="buttonNum">
+                <button class="btn" onclick="clearText()">C</button>
+                <button class="btn">+/-</button>
+                <button class="btn" onclick="deleteRecent()">Del</button>
+                <button class="btn" onclick="appendNum(this)">7</button>
+                <button class="btn" onclick="appendNum(this)">8</button>
+                <button class="btn" onclick="appendNum(this)">9</button>
+                <button class="btn" onclick="appendNum(this)">4</button>
+                <button class="btn" onclick="appendNum(this)">5</button>
+                <button class="btn" onclick="appendNum(this)">6</button>
+                <button class="btn" onclick="appendNum(this)">1</button>
+                <button class="btn" onclick="appendNum(this)">2</button>
+                <button class="btn" onclick="appendNum(this)">3</button>
+                <button class="btn" onclick="appendNum(this)">0</button>
+                <button class="btn">.</button>
+                <button class="btn">(-)</button>
+            </div>
+            <div class="operators">
+                <button class="btnOp" onclick="addOperator(this)">/</button>
+                <button class="btnOp" onclick="addOperator(this)">*</button>
+                <button class="btnOp" onclick="addOperator(this)">-</button>
+                <button class="btnOp" onclick="addOperator(this)">+</button>
+                <button class="btnOp" onclick="operateParse()">=</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">Made by TheCheeseMeister</footer>
 </body>
 </html>
